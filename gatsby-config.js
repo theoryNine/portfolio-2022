@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ansel Colvin | Front-End Developer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -36,8 +36,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Mulish\:200,200i,400,400i,700,700i`,
-          `Pacifico\:200,200i,400,400i,700,700i`
+          `Mulish\:200,200i,400,400i,500,500i,700,700i`,
+          `Pacifico\:200,200i,400,400i,500,500i,700,700i`
         ],
         display: 'swap'
       }
