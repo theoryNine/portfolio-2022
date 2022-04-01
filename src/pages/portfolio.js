@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero/Hero";
 import ContentLeft from "../components/ContentLeft";
 import ContentRight from "../components/ContentRight";
 
