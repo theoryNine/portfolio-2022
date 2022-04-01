@@ -33,17 +33,6 @@ const Layout = ({ children }) => {
       >
         <Header />
         <main style={{width:`100%`}}>{children}</main>
-        <Container>
-          <footer
-            style={{
-              marginTop: `2rem`,
-            }}
-          >
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a>
-          </footer>
-        </Container>
       </div>
     </>
   )

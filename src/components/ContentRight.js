@@ -11,6 +11,11 @@ const InnerContainer = styled.div`
     border: 1px solid var(--fireTeal);
     border-right: none;
     width: 75%;
+    transition: .5s ease box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--fireTeal);
+    }
 `
 
 const TextContent = styled.div`

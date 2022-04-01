@@ -1,6 +1,19 @@
+// Component Name: Hero Background
+
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes } from "styled-components";
 import heroBg from "../../images/ClippedStars.png";
+
+const fadeInUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: .7;
+    transform: translateY(0);
+  }
+`
 
 const HeroBackground = styled.img`
     position:absolute;
@@ -9,7 +22,9 @@ const HeroBackground = styled.img`
     height:auto;
     display:block;
     z-index:2;
-    top: 40%;
+    top: 30%;
+    animation-name: ${fadeInUp};
+    animation-duration: 4s;
 `
 
 const Background = () => {
