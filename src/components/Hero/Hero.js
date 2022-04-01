@@ -16,7 +16,7 @@ const HeroContainer = styled.div`
   height: 600px;
   position: relative;
   overflow: hidden;
-  transition: .5s ease-out box-shadow, 2s ease-in-out transform, 2s ease-in-out opacity;
+  transition: .3s ease-out box-shadow, 2s ease-in-out transform, 2s ease-in-out opacity;
   transform: translateY(-20px);
   opacity: 0;
 
@@ -37,7 +37,7 @@ const Hero = () => {
   useEffect(() => {
     // setAnimate sets the animate state
     setAnimate(true);
-  })
+  },[])
 
     return (
         <HeroContainer className={animate === true ? 'animate' : ''}>
