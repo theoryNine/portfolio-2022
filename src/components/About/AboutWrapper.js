@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import useIntersection from "../hooks/useIntersection";
+import Aquarius from "./Aquarius";
 
 const BorderedContainer = styled.div`
     display: flex;
@@ -8,7 +8,7 @@ const BorderedContainer = styled.div`
     margin: 2rem 0;
     transition: .5s ease-out box-shadow, 2s ease-in-out transform, 2s ease-in-out opacity;
     transform: translateX(20px);
-    transition-delay: 1s;
+    transition-delay: 3s opacity, 3s transform;
     opacity: 0;
 
     &.animate {
@@ -36,10 +36,14 @@ const TextContent = styled.div`
 `
 
 const ImageContainer = styled.div`
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25%;
 `
 
-const ContentRight = ({ children }) => {
+const AboutWrapper = ({ children }) => {
     const [animate, setAnimate] = useState(false);
 
     useEffect(() => {
@@ -48,7 +52,9 @@ const ContentRight = ({ children }) => {
 
     return (
         <BorderedContainer className={animate === true ? 'animate' : ''}>
-            <ImageContainer />
+            <ImageContainer>
+                <Aquarius />
+            </ImageContainer>
             <InnerContainer>
                 <TextContent>
                     {children}
@@ -58,4 +64,4 @@ const ContentRight = ({ children }) => {
     )
 }
 
-export default ContentRight;
+export default AboutWrapper;

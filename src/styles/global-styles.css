@@ -21,3 +21,8 @@ body {
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+:root {
+    --primaryFont: 'Mulish';
+    --secondaryFont: 'Pacifico'; 
+}

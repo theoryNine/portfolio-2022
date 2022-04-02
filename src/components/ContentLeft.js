@@ -6,7 +6,7 @@ const BorderedContainer = styled.div`
     margin: 2rem 0;
     transition: .5s ease-out box-shadow, 2s ease-in-out transform, 2s ease-in-out opacity;
     transform: translateX(-20px);
-    transition-delay: 1s;
+    transition-delay: 0;
     opacity: 0;
 
     &.animate {
@@ -31,6 +31,7 @@ const TextContent = styled.div`
     width: 80%;
     margin-right: 2rem;
     margin-left: auto;
+    text-align: right;
 `
 
 const ImageContainer = styled.div`
