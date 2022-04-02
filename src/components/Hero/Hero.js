@@ -19,9 +19,14 @@ const HeroContainer = styled.div`
   transition: .3s ease-out box-shadow, 2s ease-in-out transform, 2s ease-in-out opacity;
   transform: translateY(-20px);
   opacity: 0;
+  z-index: 2;
 
   &:hover {
     box-shadow: 0 0 10px var(--fireTeal);
+
+    img {
+      transform: translateY(-8px);
+    }
   }
 
   &.animate {

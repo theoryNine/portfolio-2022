@@ -19,6 +19,8 @@ const BorderedContainer = styled.div`
 
 const InnerContainer = styled.div`
     border: 1px solid var(--fireTeal);
+    background: black;
+    z-index: 1;
     border-right: none;
     width: 75%;
     transition: .5s ease box-shadow;
@@ -36,7 +38,7 @@ const TextContent = styled.div`
 `
 
 const ImageContainer = styled.div`
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;

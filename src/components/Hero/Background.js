@@ -1,7 +1,7 @@
 // Component Name: Hero Background
 
 import React from "react";
-import styled, {keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import heroBg from "../../images/ClippedStars.png";
 
 const fadeInUp = keyframes`
@@ -25,6 +25,7 @@ const HeroBackground = styled.img`
     top: 30%;
     animation-name: ${fadeInUp};
     animation-duration: 4s;
+    transition: 2s ease transform;
 `
 
 const Background = () => {
