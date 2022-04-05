@@ -1,19 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import SectionHeading from "../SectionHeading";
 import AboutWrapper from "./AboutWrapper";
-
-const AboutHeading = styled.h2 `
-    font-family: var(--secondaryFont);
-    font-size: 2em;
-    text-shadow: 0 0 3px var(--pureWhite);
-    line-height: 1;
-    opacity: .9;
-`
 
 const About = () => {
     return(
         <AboutWrapper>
-            <AboutHeading>nice to meet you...</AboutHeading>
+            <SectionHeading align="left" content="nice to meet you..." />
 
             <p>I'm Ansel, and I'm a self-taught, detail-oriented Front-End Developer and Certified AEM Developer based out of Seattle, Washington. I've been tinkering with websites for over two decades now and have been putting my code to work professionally for years. I build clean, coherent, accessible websites and apps to respond to the needs of organizations of all sizes and specialties.</p>
 

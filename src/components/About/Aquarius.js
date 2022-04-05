@@ -7,23 +7,24 @@ const Constellation = styled.svg`
     stroke-width: 3;
     opacity: 0;
     transition: 2s ease-out all;
-    transform: translateX(-50px);
+    transform: translateX(-50px) rotate(20deg);
     transition-delay: 2s transform, 3s opacity;
 
     path {
         transition: 2s ease-out filter;
+        filter: drop-shadow(0 0 10px var(--neonPink));
     }
 
     &.animate {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0) scale(1.3) rotate(20deg);
     }
 
     &:hover {
-        transform: scale(1.3) rotate(20deg);
+        //transform: scale(1) rotate(0);
 
         path {
-            filter: drop-shadow(0 0 25px var(--neonPink));
+            filter: drop-shadow(0 0 35px var(--neonPink));
         }
     }
 `

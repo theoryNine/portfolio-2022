@@ -2,15 +2,13 @@ import React from "react";
 import Layout from "../components/layout";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-import ContentLeft from "../components/ContentLeft";
+import Toolset from "../components/Toolset/Toolset";
 
 const PortfolioPage = () => (
   <Layout>
     <Hero />
     <About />
-    <ContentLeft>
-      <p>Some text.</p>
-    </ContentLeft>
+    <Toolset />
   </Layout>
 )
 

@@ -50,8 +50,8 @@ const MainContent = () => {
         <>
             <Headline>Ansel Colvin</Headline>
             <SubHeadline>Front-End Developer</SubHeadline>
-            <SmallHeadline>Certified AEM Developer</SmallHeadline>
             <SmallHeadline>React Developer</SmallHeadline>
+            <SmallHeadline>Certified AEM Developer</SmallHeadline>
         </>
     )
 }
