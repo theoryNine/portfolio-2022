@@ -36,7 +36,7 @@ const SubHeadline = styled.h2`
 const SmallHeadline = styled.h3`
   color: var(--pureWhite);
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-family: 'Mulish';
   margin: 0;
   margin-bottom: .5rem;
@@ -50,8 +50,7 @@ const MainContent = () => {
         <>
             <Headline>Ansel Colvin</Headline>
             <SubHeadline>Front-End Developer</SubHeadline>
-            <SmallHeadline>React Developer</SmallHeadline>
-            <SmallHeadline>Certified AEM Developer</SmallHeadline>
+            <SmallHeadline>React Developer / Certified AEM Developer</SmallHeadline>
         </>
     )
 }

@@ -1,5 +1,6 @@
 :root {
     --black: #000;
+    --offWhite: rgb(204,208,213);
     --pureWhite: #fff;
     --fireTeal: rgb(48, 187, 213);
     --glowTeal: rgb(204, 247, 255);

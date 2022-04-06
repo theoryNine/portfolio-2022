@@ -10,6 +10,7 @@ const Heading = styled.h2`
     color: var(--pureWhite);
     text-align: ${props => props.align};
     width: 100%;
+    margin: 1.5rem 0;
 `
 
 const SectionHeading = ({ content, align }) => {

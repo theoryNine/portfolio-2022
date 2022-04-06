@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Aquarius from "./Aquarius";
-import Portrait from "./Portrait";
+import Image from "./Image";
 
 const BorderedContainer = styled.div`
     display: flex;
@@ -22,7 +21,7 @@ const InnerContainer = styled.div`
     border: 1px solid var(--fireTeal);
     background: rgba(0,0,0,.6);
     z-index: 1;
-    border-right: none;
+    border-left: none;
     width: 75%;
     transition: .3s ease-out box-shadow;
 
@@ -31,20 +30,20 @@ const InnerContainer = styled.div`
     }
 
     @media (max-width: 1024px) {
-        border-right: 1px solid var(--fireTeal);
+        border-left: 1px solid var(--fireTeal);
         width: 100%;
     }
 `
 
 const TextContent = styled.div`
     width: 80%;
-    margin-right: auto;
-    margin-left: 2em;
+    margin-right: 2rem;
+    margin-left: auto;
 
     @media (max-width: 1024px) {
         width: 100%;
         padding: 0 2em;
-        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 767px) {
@@ -53,36 +52,34 @@ const TextContent = styled.div`
 `
 
 const ImageContainer = styled.div`
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
 
     @media (max-width: 1024px) {
-        overflow: visible;
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
         width: 100%;
+        height: 100%;
     }
     `
     
-const AboutWrapper = ({ children }) => {
+const SkillsWrapper = ({ children }) => {
     return (
         <BorderedContainer>
-            <ImageContainer>
-                <Portrait />
-                <Aquarius />
-            </ImageContainer>
             <InnerContainer>
                 <TextContent>
                     {children}
                 </TextContent>
             </InnerContainer>
+            <ImageContainer>
+                <Image />
+            </ImageContainer>
         </BorderedContainer>
     )
 }
 
-export default AboutWrapper;
+export default SkillsWrapper;

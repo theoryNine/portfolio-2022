@@ -11,7 +11,7 @@ body {
     background-color: var(--black);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: hsla(0, 0%, 0%, 0.8);
+    color: var(--offWhite);
     font-family: 'Mulish';
     font-weight: normal;
     word-wrap: break-word;
@@ -20,7 +20,7 @@ body {
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
-    overflow-x: hide;
+    overflow-x: hidden;
 }
 
 * {

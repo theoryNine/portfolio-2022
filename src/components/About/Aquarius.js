@@ -1,49 +1,46 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Constellation = styled.svg`
     height: 100%;
     stroke: var(--neonPink);
     stroke-width: 3;
-    opacity: 0;
-    transition: 2s ease-out all;
-    transform: translateX(-50px) rotate(20deg);
-    transition-delay: 2s transform, 3s opacity;
+    transform: rotate(20deg) scale(1.5);
 
     path {
-        transition: 2s ease-out filter;
         filter: drop-shadow(0 0 10px var(--neonPink));
-    }
-
-    &.animate {
-        opacity: 1;
-        transform: translateX(0) scale(1.3) rotate(20deg);
+        transition: .5s ease-out filter;
     }
 
     &:hover {
-        //transform: scale(1) rotate(0);
-
         path {
             filter: drop-shadow(0 0 35px var(--neonPink));
         }
+    }
+
+    @media (max-width: 1280px) {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 1024px) {
+        transform: scale(1);
     }
 `
 
 const ConstellationWrapper = styled.div`
     height: 100%;
     overflow: visible;
+    z-index: 0;
+
+    @media (min-width: 1025px) {
+        display: none;
+    }
 `
 
 const Aquarius = () => {
-    const [animate, setAnimate] = useState(false);
-
-    useEffect(() => {
-        setAnimate(true);
-    },[])
-
     return(
         <ConstellationWrapper>
-            <Constellation viewBox="0 0 1000 1000" className={animate === true ? 'animate' : ''}>
+            <Constellation viewBox="0 0 1000 1000" className="animate">
                 <path id="XMLID_1_" d="M820.1494141,94.855835c0,24.7731934-20.0826416,44.855896-44.855835,44.855896
                     c-14.0728149,0-26.6262207-6.4854736-34.8501587-16.6251831L535.7272949,261.4460449
                     c2.175415,4.2687988,3.4099731,9.09729,3.4099731,14.21698c0,17.3221436-14.0423584,31.364502-31.364502,31.364502
