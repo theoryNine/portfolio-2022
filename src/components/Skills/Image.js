@@ -2,21 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const SvgImage = styled.svg`
-    height: 100%;
+	height: 600px;
     stroke: var(--pureWhite);
     stroke-width: 1;
-    transform: scale(1.5);
 
     path {
         filter: drop-shadow(0 0 10px var(--pureWhite));
     }
 
-    @media (max-width: 1280px) {
-        transform: scale(1.2);
-    }
-
     @media (max-width: 1024px) {
-        transform: scale(1);
         opacity: .5;
     }
 `
