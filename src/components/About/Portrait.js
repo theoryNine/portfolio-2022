@@ -9,6 +9,18 @@ const Image = styled.img`
     opacity: .8;
     border: 1px solid var(--fireTeal);
     transition: .3s ease-in-out all;
+    position: relative;
+
+    &::before {
+        content: '';
+        height: 15px;
+        width: 15px;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+    }
 
     &:hover {
         opacity: .9;
