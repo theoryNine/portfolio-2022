@@ -9,12 +9,13 @@ const Constellation = styled.svg`
 
     path {
         filter: drop-shadow(0 0 10px var(--neonPink));
-        transition: .5s ease-out filter;
+        transition: .5s ease-out filter, 8s ease-in-out transform;
     }
 
     &:hover {
         path {
             filter: drop-shadow(0 0 35px var(--neonPink));
+            transform: rotate(5deg);
         }
     }
 
@@ -31,10 +32,7 @@ const ConstellationWrapper = styled.div`
     height: 100%;
     overflow: visible;
     z-index: 0;
-
-    @media (min-width: 1025px) {
-        display: none;
-    }
+    position: absolute;
 `
 
 const Aquarius = () => {

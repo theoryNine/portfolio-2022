@@ -6,10 +6,10 @@ const Image = styled.img`
     width: auto;
     height: 100%;
     max-height: 350px;
-    opacity: .8;
     border: 1px solid var(--fireTeal);
     transition: .3s ease-in-out all;
     position: relative;
+    z-index: 1;
 
     &::before {
         content: '';
@@ -23,7 +23,6 @@ const Image = styled.img`
     }
 
     &:hover {
-        opacity: .9;
         box-shadow: 0 0 10px var(--fireTeal);
     }
 

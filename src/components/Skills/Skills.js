@@ -19,7 +19,7 @@ const SkillCardGrid = styled.div`
 const Skills = () => {
     return(
         <SkillsWrapper>
-            <SectionHeading align="center" content="my daily toolbox" />
+            <SectionHeading align="center" content="My Daily Tools" />
             <SkillCardGrid>
                 <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
                 <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />
@@ -28,7 +28,7 @@ const Skills = () => {
                 <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
                 <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
             </SkillCardGrid>
-            <SectionHeading align="center" content="other tools i tinker with" />
+            <SectionHeading align="center" content="Other Things I Tinker With" />
             <SkillCardGrid>
                 <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
                 <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />

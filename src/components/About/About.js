@@ -5,7 +5,7 @@ import AboutWrapper from "./AboutWrapper";
 const About = () => {
     return(
         <AboutWrapper>
-            <SectionHeading align="left" content="nice to meet you" />
+            <SectionHeading align="left" content="Nice To Meet You" />
 
             <p>I'm Ansel, and I'm a self-taught, detail-oriented Front-End Developer and Certified AEM Developer based out of Seattle, Washington. I've been tinkering with websites for over two decades now and have been putting my code to work professionally for years. I build clean, coherent, accessible websites and apps to respond to the needs of organizations of all sizes and specialties.</p>
 
