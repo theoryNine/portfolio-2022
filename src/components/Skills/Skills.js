@@ -21,12 +21,12 @@ const Skills = () => {
         <SkillsWrapper>
             <SectionHeading align="center" content="My Daily Tools" />
             <SkillCardGrid>
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />
-                <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
+                <SkillCard toolName="HTML/CSS/Javascript" toolDesc="The core of our web markup." />
+                <SkillCard toolName="React.js" toolDesc="Styling tools." />
+                <SkillCard toolName="Adobe Experience Manager" toolDesc="Styling tools." />
+                <SkillCard toolName="Next.js" toolDesc="The core of our web markup." />
+                <SkillCard toolName="Vue.js" toolDesc="The core of our web markup." />
+                <SkillCard toolName="Redux" toolDesc="The core of our web markup." />
             </SkillCardGrid>
             <SectionHeading align="center" content="Other Things I Tinker With" />
             <SkillCardGrid>
