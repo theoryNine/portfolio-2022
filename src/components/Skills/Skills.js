@@ -10,6 +10,7 @@ const SkillCardGrid = styled.div`
     gap: .5rem;
     width: 100%;
     margin-bottom: 1rem;
+    justify-content: center;
 
     @media (max-width: 767px) {
         display: inline-block;
@@ -21,21 +22,14 @@ const Skills = () => {
         <SkillsWrapper>
             <SectionHeading align="center" content="My Daily Tools" />
             <SkillCardGrid>
-                <SkillCard toolName="HTML/CSS/Javascript" toolDesc="The core of our web markup." />
-                <SkillCard toolName="React.js" toolDesc="Styling tools." />
-                <SkillCard toolName="Adobe Experience Manager" toolDesc="Styling tools." />
-                <SkillCard toolName="Next.js" toolDesc="The core of our web markup." />
-                <SkillCard toolName="Vue.js" toolDesc="The core of our web markup." />
-                <SkillCard toolName="Redux" toolDesc="The core of our web markup." />
+                <SkillCard toolName="HTML/CSS/Javascript" />
+                <SkillCard toolName="React" />
+                <SkillCard toolName="Adobe Experience Manager" />
+                <SkillCard toolName="TypeScript" />
             </SkillCardGrid>
             <SectionHeading align="center" content="Other Things I Tinker With" />
             <SkillCardGrid>
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />
-                <SkillCard toolName="CSS/SASS/Styled Components" toolDesc="Styling tools." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
-                <SkillCard toolName="HTML" toolDesc="The core of our web markup." />
+                <SkillCard toolName="HTML" />
             </SkillCardGrid>
         </SkillsWrapper>
     )

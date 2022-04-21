@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
@@ -12,35 +12,16 @@ const CardContainer = styled.div`
     }
 `
 
-const CardDesc = styled.div`
-    display: none;
-
-    &.active {
-        display: block;
-    }
-`
-
 const CardTitle = styled.h3`
     font-size: 1rem;
+    text-align: center;
 `
 
-const SkillCard = ({toolName, toolDesc}) => {
-    const [cardActive, toggleActive] = useState(false);
-    
-    const handleClick = () => {
-        toggleActive(!cardActive);
-    }
-
+const SkillCard = ({toolName}) => {
     return (
         <div>
         <CardContainer>
             <CardTitle>{toolName}</CardTitle>
-            <CardDesc className={cardActive ? 'active' : ''}>
-                <p>{toolDesc}</p>
-            </CardDesc>
-            <div>
-                <button onClick={handleClick}>Dropdown Toggle</button>
-            </div>
         </CardContainer>
         </div>
     )
