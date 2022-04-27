@@ -1,13 +1,13 @@
 import React from "react";
-import WorkWrapper from "./WorkWrapper";
 import SectionHeading from "../SectionHeading";
+import SectionWrapper from "../SectionWrapper";
 
 const Work = () => {
     return (
-        <WorkWrapper>
-            <SectionHeading align="center" content="Projects I've Developed"></SectionHeading>
+        <SectionWrapper>
+            <SectionHeading align="center" content="Some Of My Work"></SectionHeading>
             <p>Text</p>
-        </WorkWrapper>
+        </SectionWrapper>
     )
 }
 
