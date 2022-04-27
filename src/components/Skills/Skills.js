@@ -1,8 +1,8 @@
 import React from "react";
 import SectionHeading from "../SectionHeading";
 import SkillCard from "./SkillCard";
-import SkillsWrapper from "./SkillsWrapper";
 import styled from "styled-components";
+import SectionWrapper from "../SectionWrapper";
 
 const SkillCardGrid = styled.div`
     display: inline-grid;
@@ -19,7 +19,7 @@ const SkillCardGrid = styled.div`
 
 const Skills = () => {
     return(
-        <SkillsWrapper>
+        <SectionWrapper>
             <SectionHeading align="center" content="My Daily Tools" />
             <SkillCardGrid>
                 <SkillCard toolName="HTML/CSS/JavaScript" />
@@ -41,7 +41,7 @@ const Skills = () => {
                 <SkillCard toolName="GraphQL" />
                 <SkillCard toolName="Countless JS Libraries" />
             </SkillCardGrid>
-        </SkillsWrapper>
+        </SectionWrapper>
     )
 }
 
