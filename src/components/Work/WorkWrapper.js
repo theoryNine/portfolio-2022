@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "./Image";
 
 const BorderedContainer = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 2em 0;
     position: relative;
 
@@ -21,7 +20,6 @@ const InnerContainer = styled.div`
     border: 1px solid var(--fireTeal);
     background: rgba(0,0,0,.6);
     z-index: 1;
-    border-left: none;
     width: 75%;
     transition: .3s ease-out box-shadow;
 
@@ -30,15 +28,14 @@ const InnerContainer = styled.div`
     }
 
     @media (max-width: 1024px) {
-        border-left: 1px solid var(--fireTeal);
         width: 100%;
     }
 `
 
 const TextContent = styled.div`
-    width: 80%;
+    width: 100%;
     max-width: 1400px;
-    margin-right: 2rem;
+    margin-right: auto;
     margin-left: auto;
 
     @media (max-width: 1024px) {
@@ -51,24 +48,8 @@ const TextContent = styled.div`
         padding: 0 1em;
     }
 `
-
-const ImageContainer = styled.div`
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-
-    @media (max-width: 1024px) {
-        position: absolute;
-        top: 150px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    `
     
-const SkillsWrapper = ({ children }) => {
+const WorkWrapper = ({ children }) => {
     return (
         <BorderedContainer>
             <InnerContainer>
@@ -76,11 +57,8 @@ const SkillsWrapper = ({ children }) => {
                     {children}
                 </TextContent>
             </InnerContainer>
-            <ImageContainer>
-                <Image />
-            </ImageContainer>
         </BorderedContainer>
     )
 }
 
-export default SkillsWrapper;
+export default WorkWrapper;

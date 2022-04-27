@@ -1,8 +1,13 @@
 import React from "react";
+import WorkWrapper from "./WorkWrapper";
+import SectionHeading from "../SectionHeading";
 
 const Work = () => {
     return (
-        <p>Work exp section</p>
+        <WorkWrapper>
+            <SectionHeading align="center" content="Projects I've Developed"></SectionHeading>
+            <p>Text</p>
+        </WorkWrapper>
     )
 }
 

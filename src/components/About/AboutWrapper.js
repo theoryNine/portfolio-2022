@@ -40,6 +40,7 @@ const TextContent = styled.div`
     width: 80%;
     margin-right: auto;
     margin-left: 2em;
+    max-width: 1400px;
 
     @media (max-width: 1024px) {
         width: 100%;
@@ -55,9 +56,10 @@ const TextContent = styled.div`
 const ImageContainer = styled.div`
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 25%;
+    margin-right: 1rem;
 
     @media (max-width: 1024px) {
         overflow: visible;

@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const CardContainer = styled.div`
     border: 1px solid var(--fireTeal);
-    padding: 1rem;
     width: 100%;
     background: var(--black);
 
@@ -15,6 +14,7 @@ const CardContainer = styled.div`
 const CardTitle = styled.h3`
     font-size: 1rem;
     text-align: center;
+    margin: 1rem 5px;
 `
 
 const SkillCard = ({toolName}) => {
