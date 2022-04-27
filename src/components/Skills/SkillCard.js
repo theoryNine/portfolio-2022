@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-    border: 1px solid var(--fireTeal);
+    border: 1px solid var(--neonPink);
     width: 100%;
     background: var(--black);
 

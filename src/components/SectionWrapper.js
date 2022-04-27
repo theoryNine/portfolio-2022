@@ -21,11 +21,6 @@ const InnerContainer = styled.div`
     background: rgba(0,0,0,.6);
     z-index: 1;
     width: 75%;
-    transition: .3s ease-out box-shadow;
-
-    &:hover {
-        box-shadow: 0 0 10px var(--fireTeal);
-    }
 
     @media (max-width: 1024px) {
         width: 100%;

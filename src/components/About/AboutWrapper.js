@@ -24,11 +24,6 @@ const InnerContainer = styled.div`
     z-index: 1;
     border-right: none;
     width: 75%;
-    transition: .3s ease-out box-shadow;
-
-    &:hover {
-        box-shadow: 0 0 10px var(--fireTeal);
-    }
 
     @media (max-width: 1024px) {
         border-right: 1px solid var(--fireTeal);
@@ -59,7 +54,6 @@ const ImageContainer = styled.div`
     justify-content: flex-end;
     align-items: center;
     width: 25%;
-    margin-right: 1rem;
 
     @media (max-width: 1024px) {
         overflow: visible;

@@ -5,7 +5,7 @@ const Heading = styled.h2`
     font-family: var(--secondaryFont);
     font-size: 2em;
     text-shadow: 0 0 3px var(--pureWhite);
-    line-height: 1;
+    line-height: 1.2;
     opacity: .9;
     color: var(--pureWhite);
     text-align: ${props => props.align};

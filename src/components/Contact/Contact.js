@@ -1,8 +1,13 @@
 import React from "react";
+import SectionHeading from "../SectionHeading";
+import SectionWrapper from "../SectionWrapper";
 
 const Contact = () => {
     return (
-        <p>Contact form</p>
+        <SectionWrapper>
+            <SectionHeading align="center" content="Get In Touch"></SectionHeading>
+            <p>Text</p>
+        </SectionWrapper>
     )
 }
 

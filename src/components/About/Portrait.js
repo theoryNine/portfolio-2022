@@ -10,6 +10,7 @@ const Image = styled.img`
     transition: .3s ease-in-out all;
     position: relative;
     z-index: 1;
+    margin-right: 1rem;
 
     &::before {
         content: '';
@@ -20,10 +21,6 @@ const Image = styled.img`
         bottom: 0;
         right: 0;
         display: block;
-    }
-
-    &:hover {
-        box-shadow: 0 0 10px var(--fireTeal);
     }
 
     @media (max-width: 1024px) {
