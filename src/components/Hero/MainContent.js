@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import DownloadButton from "./DownloadButton";
 
 const Headline = styled.h1`
   color: var(--pureWhite);
@@ -51,6 +52,7 @@ const MainContent = () => {
             <Headline>Ansel Colvin</Headline>
             <SubHeadline>Front-End Developer</SubHeadline>
             <SmallHeadline>React Developer / Certified AEM Developer</SmallHeadline>
+            <DownloadButton />
         </>
     )
 }

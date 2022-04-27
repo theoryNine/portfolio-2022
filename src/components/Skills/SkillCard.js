@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-    border: 1px solid var(--neonPink);
     width: 100%;
-    background: var(--black);
+    background: var(--neonPinkDark1);
+    padding: 9px 5px;
 
     @media (max-width: 767px) {
         margin-bottom: .5rem;
@@ -14,7 +14,7 @@ const CardContainer = styled.div`
 const CardTitle = styled.h3`
     font-size: 1rem;
     text-align: center;
-    margin: 1rem 5px;
+    margin: 0;
 `
 
 const SkillCard = ({toolName}) => {

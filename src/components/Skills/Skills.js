@@ -34,7 +34,7 @@ const Skills = () => {
                 <SkillCard toolName="Vue" />
                 <SkillCard toolName="Angular" />
                 <SkillCard toolName="Next.js" />
-                <SkillCard toolName="Figma Prototyping" />
+                <SkillCard toolName="React Native" />
                 <SkillCard toolName="UI Libraries (i.e. MUI)" />
                 <SkillCard toolName="WordPress" />
                 <SkillCard toolName="PHP" />

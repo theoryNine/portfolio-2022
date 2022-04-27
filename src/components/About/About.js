@@ -11,7 +11,7 @@ const About = () => {
 
             <p>Outside of code I have a love of traveling and a passion to explore and look forward to plenty of years of traveling the globe. I spend my weekends wandering the city walking for miles, taking a roadtrip to a forest trail, gaming on my PC, or toying with code on the couch.</p>
 
-            <p>Follow along below to get a better understanding of my tools and skills, as well as some of the projects I've worked on in the past. As a front-end developer my skillset is always evolving, so everything here is subject to change, and not everything can be listed, so get in touch if you have something exciting for me to learn!</p>
+            <p>Follow along below to get a better understanding of the tools and skills I employ, as well as some of the projects I've worked on in the past.</p>
         </AboutWrapper>
     )
 }
