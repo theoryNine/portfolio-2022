@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
+    border: 1px solid var(--neonPinkDark2);
     width: 100%;
     background: var(--neonPinkDark1);
     padding: 9px 5px;

@@ -9,7 +9,6 @@ const SkillCardGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
     width: 100%;
-    margin-bottom: 1rem;
     justify-content: center;
 
     @media (max-width: 767px) {
@@ -29,7 +28,7 @@ const Skills = () => {
                 <SkillCard toolName="SASS/LESS/Stylus" />
                 <SkillCard toolName="Styled Components/Emotion" />
             </SkillCardGrid>
-            <SectionHeading align="center" content="Things I Often Tinker With" />
+            <SectionHeading align="center" content="I Often Tinker With..." />
             <SkillCardGrid>
                 <SkillCard toolName="Vue" />
                 <SkillCard toolName="Angular" />

@@ -21,6 +21,7 @@ const InnerContainer = styled.div`
     background: rgba(0,0,0,.6);
     z-index: 1;
     width: 75%;
+    padding: 0 0 1rem 0;
 
     @media (max-width: 1024px) {
         width: 100%;
