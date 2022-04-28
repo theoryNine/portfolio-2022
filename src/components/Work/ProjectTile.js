@@ -29,6 +29,10 @@ const TileContainer = styled.div`
         .plus-vert {
             box-shadow: 0 0 10px var(--pureWhite);
         }
+
+        img {
+            top: 0;
+        }
     }
     
     &.expanded {
@@ -46,17 +50,22 @@ const TileContainer = styled.div`
 
 const BackgroundContainer = styled.img`
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 10%;
     width: 75%;
     height: auto;
     opacity: .5;
     z-index: -1;
-    transition: .5s ease transform, .3s ease opacity;
+    transition: .5s ease transform, .5s ease top, .3s ease opacity;
     transform: rotate(2deg);
+
+    &:hover {
+        top: 10px;
+    }
     
     &.expanded {
         transform: rotate(0deg);
+        top: 0;
         
         @media (max-width: 767px) {
             opacity: .2;

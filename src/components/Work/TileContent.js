@@ -5,13 +5,11 @@ import Screenshot from "./Screenshot";
 const ContentContainer = styled.div`
     max-height: 0;
     overflow: hidden;
-    transition: .5s ease all;
     background: var(--black75);
     padding: 0;
-    opacity: 0;
         
     &.expanded {
-        max-height: 99999px;
+        max-height: 9999px;
         padding: 25px 10px;
         opacity: 1;
     }
