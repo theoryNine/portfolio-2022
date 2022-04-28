@@ -1,37 +1,36 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PlusIcon from "./PlusIcon";
+import TileContent from "./TileContent";
 
 const TileContainer = styled.div`
     width: 100%;
-    padding: 25px 10px;
     border: 1px solid var(--neonPink);
-    cursor: pointer;
     transition: .3s ease-out box-shadow;
     position: relative;
     overflow: hidden;
-
+    
     h2 {
         transition: .3s ease text-shadow;
     }
-
+    
     &:not(:last-child) {
         margin-bottom: .5rem;
     }
-
+    
     &:hover {
         box-shadow: 0 0 10px var(--neonPink);
-
+        
         h2 {
             text-shadow: 0 0 10px var(--pureWhite);
         }
-
+        
         .plus-hori,
         .plus-vert {
             box-shadow: 0 0 10px var(--pureWhite);
         }
     }
-
+    
     &.expanded {
         box-shadow: 0 0 10px var(--neonPink);
         
@@ -53,48 +52,47 @@ const BackgroundContainer = styled.img`
     height: auto;
     opacity: .5;
     z-index: -1;
-    transition: .3s ease transform, .3s ease opacity;
+    transition: .5s ease transform, .3s ease opacity;
     transform: rotate(2deg);
-
+    
     &.expanded {
+        transform: rotate(0deg);
+        
         @media (max-width: 767px) {
-            opacity: .3;
+            opacity: .2;
         }
     }
-`
+    `
 
-const TileHeader = styled.div`
+const TileHeader = styled.button`
     display: flex;
+    padding: 25px 10px;
+    background: none;
+    border: none;
+    width: 100%;
     align-items: flex-end;
     z-index: 2;
     color: var(--pureWhite);
     text-shadow: 0 0 5px var(--pureWhite);
     font-size: 1.2rem;
-`
-
-const TileContent = styled.div`
-    height: 0;
-    overflow: hidden;
-    transition: .5s ease all;
-        
-    &.expanded {
-        height: 300px;
+    cursor: pointer;
+    
+    @media (max-width: 767px) {
+        font-size: .8rem;
     }
-`
+    `
 
-const ProjectTile = ({title, background}) => {
+const ProjectTile = ({title, background, liveUrl, screenshot1}) => {
     const [expanded, setExpand] = useState(false);
-
+    
     return (
-        <TileContainer onClick={() => setExpand(!expanded)} className={expanded ? 'expanded' : null}>
+        <TileContainer className={expanded ? 'expanded' : null}>
             <BackgroundContainer src={background} className={expanded ? 'expanded' : null} />
-            <TileHeader>
+            <TileHeader type="button" onClick={() => setExpand(!expanded)}>
                 <h2>{title}</h2>
                 <PlusIcon />
             </TileHeader>
-            <TileContent className={expanded ? 'expanded' : null}>
-                <p>Some text</p>
-            </TileContent>
+            <TileContent screenshot1={screenshot1} expanded={expanded} liveUrl={liveUrl} />
         </TileContainer>
     )
 }

@@ -4,10 +4,15 @@ import styled from "styled-components";
 const Plus = styled.div`
     position: absolute;
     right: 1rem;
-    top: 50px;
+    top: 55px;
     width: 30px;
     height: 30px;
     z-index: 2;
+
+    @media (max-width: 767px) {
+        width: 20px;
+        height: 20px;
+    }
 `
 
 const HoriLine = styled.span`
@@ -17,7 +22,12 @@ const HoriLine = styled.span`
     background-color: var(--pureWhite);
     position: absolute;
     top: 50%;
+    left: 0;
     transition: .3s ease box-shadow;
+
+    @media (max-width: 767px) {
+        top: 47%;
+    }
 `
 
 const VertLine = styled.span`
@@ -26,8 +36,12 @@ const VertLine = styled.span`
     width: 2px;
     background-color: var(--pureWhite);
     position: absolute;
-    left: 50%;
+    left: 45%;
     transition: .5s ease all;
+
+    @media (max-width: 767px) {
+        left: 47%;
+    }
 `
 
 const PlusIcon = () => {

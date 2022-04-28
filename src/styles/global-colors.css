@@ -1,5 +1,6 @@
 :root {
     --black: #000;
+    --black75: rgb(0,0,0,.75);
     --deeppurple: rgb(12,6,17);
     --offWhite: rgb(204,208,213);
     --pureWhite: #fff;
