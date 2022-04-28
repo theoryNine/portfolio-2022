@@ -26,6 +26,7 @@ const HeroBackground = styled.img`
     animation-name: ${fadeInUp};
     animation-duration: 4s;
     transition: 2s ease transform;
+    background: var(--black);
 `
 
 const Background = () => {
