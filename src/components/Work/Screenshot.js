@@ -10,7 +10,7 @@ const ScreenshotContainer = styled.div`
 
     &.expanded {
         width: 100%;
-        max-height: 2000px;
+        max-height: 99999px;
     }
 
     img {

@@ -11,7 +11,7 @@ const ContentContainer = styled.div`
     opacity: 0;
         
     &.expanded {
-        max-height: 3000px;
+        max-height: 99999px;
         padding: 25px 10px;
         opacity: 1;
     }
