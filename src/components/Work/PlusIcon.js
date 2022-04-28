@@ -12,6 +12,7 @@ const Plus = styled.div`
     @media (max-width: 767px) {
         width: 20px;
         height: 20px;
+        top: 45px;
     }
 `
 
