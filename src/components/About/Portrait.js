@@ -7,7 +7,6 @@ const Image = styled.img`
     height: 100%;
     max-height: 350px;
     border: 1px solid var(--fireTeal);
-    transition: .3s ease-in-out all;
     position: relative;
     z-index: 1;
     margin-right: 1rem;

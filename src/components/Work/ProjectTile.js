@@ -6,7 +6,7 @@ import TileContent from "./TileContent";
 const TileContainer = styled.div`
     width: 100%;
     border: 1px solid var(--neonPink);
-    transition: .3s ease-out box-shadow;
+    transition: .3s ease-out box-shadow, .3s linear background-color, .3s linear border;
     position: relative;
     overflow: hidden;
     
@@ -36,7 +36,9 @@ const TileContainer = styled.div`
     }
     
     &.expanded {
-        box-shadow: 0 0 10px var(--neonPink);
+        box-shadow: 0 0 10px var(--red);
+        background-color: var(--darkRed15);
+        border-color: var(--red);
         
         h2 {
             text-shadow: 0 0 10px var(--pureWhite);

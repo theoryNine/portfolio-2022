@@ -1,4 +1,4 @@
-export const ProjectData = [
+const ProjectData = [
     {
         "projectId": 1,
         "screenshot1": "url1",
@@ -14,3 +14,5 @@ export const ProjectData = [
         "stack": "Tech Stack"
     }
 ]
+
+export default ProjectData;
