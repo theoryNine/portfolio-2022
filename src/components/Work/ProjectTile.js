@@ -5,7 +5,7 @@ import TileContent from "./TileContent";
 
 const TileContainer = styled.div`
     width: 100%;
-    border: 1px solid var(--neonPink);
+    border: 1px solid var(--fireTeal);
     transition: .3s ease-out box-shadow, .3s linear background-color, .3s linear border;
     position: relative;
     overflow: hidden;
@@ -19,7 +19,7 @@ const TileContainer = styled.div`
     }
     
     &:hover {
-        box-shadow: 0 0 10px var(--neonPink);
+        box-shadow: 0 0 10px var(--fireTeal);
         
         h2 {
             text-shadow: 0 0 10px var(--pureWhite);
@@ -36,9 +36,9 @@ const TileContainer = styled.div`
     }
     
     &.expanded {
-        box-shadow: 0 0 10px var(--red);
-        background-color: var(--darkRed15);
-        border-color: var(--red);
+        box-shadow: 0 0 10px var(--neonPink);
+        background-color: var(--neonPinkDark1);
+        border-color: var(--neonPink);
         
         h2 {
             text-shadow: 0 0 10px var(--pureWhite);

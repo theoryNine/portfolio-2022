@@ -5,11 +5,10 @@ import styled from "styled-components";
 import SectionWrapper from "../SectionWrapper";
 
 const SkillCardGrid = styled.div`
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
 
     @media (max-width: 767px) {
         display: inline-block;

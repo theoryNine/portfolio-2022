@@ -18,10 +18,15 @@ const BorderedContainer = styled.div`
 
 const InnerContainer = styled.div`
     border: 1px solid var(--fireTeal);
+    position: relative;
     background: rgba(0,0,0,.6);
     z-index: 1;
     width: 75%;
     padding: 0 0 1rem 0;
+
+    @meda (max-width: 1400px) {
+        width: 65%;
+    }
 
     @media (max-width: 1024px) {
         width: 100%;

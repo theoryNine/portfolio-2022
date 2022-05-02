@@ -1,13 +1,15 @@
 import React from "react";
 import SectionHeading from "../SectionHeading";
-import SectionWrapper from "../SectionWrapper";
+import ContactWrapper from "./ContactWrapper";
+import ContactBackground from "./ContactBackground";
 
 const Contact = () => {
     return (
-        <SectionWrapper>
+        <ContactWrapper>
+            <ContactBackground />
             <SectionHeading align="center" content="Get In Touch"></SectionHeading>
             <p>Text</p>
-        </SectionWrapper>
+        </ContactWrapper>
     )
 }
 
