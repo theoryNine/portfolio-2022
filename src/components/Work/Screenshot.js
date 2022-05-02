@@ -8,6 +8,7 @@ const ScreenshotContainer = styled.div`
     overflow: hidden;
     border: 1px solid var(--neonPink);
     transition: .5s cubic-bezier(0, 1, 0, 1) all;
+    cursor: pointer;
 
     &.expanded {
         border-color: var(--red);
@@ -27,7 +28,7 @@ const Screenshot = ({image}) => {
 
     return (
         <ScreenshotContainer className={expanded ? 'expanded' : null} onClick={() => setExpand(!expanded)}>
-            <img src={image} />
+            <img src={image} alt="" />
         </ScreenshotContainer>
     )
 }

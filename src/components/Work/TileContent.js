@@ -3,11 +3,13 @@ import styled from "styled-components";
 import Screenshot from "./Screenshot";
 
 const ExpandContainer = styled.div`
+    height: 0;
     overflow: hidden;
     padding: 0;
     transition: .5s linear max-height;
         
     &.expanded {
+        height: auto;
         opacity: 1;
     }
 `
