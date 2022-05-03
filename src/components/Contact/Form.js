@@ -1,12 +1,86 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import LinkedIn from './LinkedIn';
 
 const FormContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  width: 49%;
+
+  @media (max-width: 1280px) {
+    width: 90%;
+  }
+
+  button[type="submit"] {
+    border: 1px solid var(--fireTeal);
+    background: var(--darkTeal);
+    text-shadow: 0 0 5px var(--pureWhite);
+    color: var(--pureWhite);
+    font-size: 1rem;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease box-shadow;
+    letter-spacing: 2px;
+    margin-right: 1rem;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--fireTeal);
+    }
+  }
+
+  button[type="reset"] {
+    border: 1px solid var(--red);
+    background: var(--darkRed);
+    text-shadow: 0 0 5px var(--pureWhite);
+    color: var(--pureWhite);
+    font-size: 1rem;
+    padding: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease box-shadow;
+    letter-spacing: 2px;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--red);
+    }
+  }
+
   form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    label {
+      text-transform: uppercase;
+      text-shadow: 0 0 10px var(--pureWhite);
+    }
+
+    input,
+    textarea {
+      border: 1px solid var(--fireTeal);
+      background: var(--aqua);
+      color: var(--purWhite);
+      padding: .5rem;
+      margin-bottom: .5rem;
+      transition: .5s ease box-shadow;
+      font-family: var(--primaryFont);
+      font-size: 1rem;
+
+      &:active,
+      &:focus {
+        box-shadow: 0 0 10px var(--fireTeal);
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+
+    button
   }
 `
 
@@ -45,20 +119,23 @@ const Form = () => {
 
   //GetForm.io
   return (
+    <>
     <FormContainer>
       <form onSubmit={handleOnSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" />
-        <label htmlFor="email">E-Mail Address</label>
-        <input type="email" name="email" />
-        <label htmlFor="message">Message</label>
-        <input type="text" name="message" />
+        <label htmlFor="email">E-Mail Address (Required)</label>
+        <input type="email" name="email" required />
+        <label htmlFor="message">Message (Required)</label>
+        <textarea name="message" required />
         <div>
           <button type="submit">Send</button>
           <button type="reset">Clear</button>
         </div>
       </form>
     </FormContainer>
+    <LinkedIn />
+    </>
   );
 };
 

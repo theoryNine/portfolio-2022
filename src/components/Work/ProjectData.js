@@ -14,6 +14,7 @@ export const ProjectData = [
         "title": "Mazda Brand Academy",
         "background": `${MazdaDesktopSS}`,
         "screenshot1": `${MazdaDesktopSS}`,
+        "screenshot2": `${MazdaDesktopSS}`,
         "liveUrl": "https://www.mazdausa.com",
         "stack": "Tech Stack"
     },

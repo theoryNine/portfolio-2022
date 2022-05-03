@@ -15,6 +15,7 @@ const Work = () => {
                         title={data.title}
                         background={data.background}
                         screenshot1={data.screenshot1}
+                        screenshot2={data.screenshot2}
                         liveUrl={data.liveUrl}
                         key={key} />
                 );

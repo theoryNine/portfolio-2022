@@ -20,11 +20,24 @@ const ContentContainer = styled.div`
     padding: 1rem;
 `
 
-const TileContent = ({expanded, liveUrl, screenshot1}) => {
+const ImageContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: top;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+`
+
+const TileContent = ({expanded, liveUrl, screenshot1, screenshot2}) => {
     return (
         <ExpandContainer className={expanded ? 'expanded' : null}>
             <ContentContainer>
-                <Screenshot image={screenshot1} />
+                <ImageContainer>
+                    <Screenshot image={screenshot1} />
+                    {screenshot2 && <Screenshot image={screenshot2} />}
+                </ImageContainer>
                 Live Site: {liveUrl}
             </ContentContainer>
         </ExpandContainer>

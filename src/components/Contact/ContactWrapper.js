@@ -5,6 +5,7 @@ const BorderedContainer = styled.div`
     display: flex;
     justify-content: center;
     margin: 2em 0;
+    margin-bottom: 1rem;
     position: relative;
 
     @media (max-width: 1024px) {
