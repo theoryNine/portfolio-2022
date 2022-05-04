@@ -8,6 +8,7 @@ const Background = styled.img`
     top: 0;
     left: 0;
     width: 100%;
+    opacity: .6;
 `
 
 const ContactBackground = () => {

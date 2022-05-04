@@ -24,6 +24,7 @@ const Container = styled.div`
         border: 1px solid var(--linkedInBlue);
         cursor: pointer;
         margin-left: .5rem;
+        transition: .3s ease box-shadow;
 
         &:hover {
             box-shadow: 0 0 10px var(--linkedInBlue);

@@ -1,5 +1,7 @@
 import MazdaDesktopSS from "../../images/sitegrabs/mazda_full.png";
 import BNYDesktopSS from "../../images/sitegrabs/bny_full.png";
+import BNYDesktopSS2 from "../../images/sitegrabs/bny_full2.png";
+import BNYMobile from "../../images/sitegrabs/bny_mobile.png";
 import SpectrumDesktopSS from "../../images/sitegrabs/spectrum_mobile_full.jpg";
 import NYLDesktopSS from "../../images/sitegrabs/nyl_full.jpg";
 import ATTDesktopSS from "../../images/sitegrabs/att_full.jpg";
@@ -14,8 +16,7 @@ export const ProjectData = [
         "title": "Mazda Brand Academy",
         "background": `${MazdaDesktopSS}`,
         "screenshot1": `${MazdaDesktopSS}`,
-        "screenshot2": `${MazdaDesktopSS}`,
-        "liveUrl": "https://www.mazdausa.com",
+        "role": "Front-End Lead",
         "stack": "Tech Stack"
     },
     {
@@ -23,8 +24,12 @@ export const ProjectData = [
         "title": "Bank of New York Mellon",
         "background": `${BNYDesktopSS}`,
         "screenshot1": `${BNYDesktopSS}`,
+        "screenshot2": `${BNYDesktopSS2}`,
+        "screenshot3": `${BNYMobile}`,
+        "role": "Senior Front-End Developer",
         "liveUrl": "https://www.bnymellon.com/",
-        "stack": "Tech Stack"
+        "description": "Worked alongside a team of front-end and back-end developers, a design agency, and key stakeholders across the organization to migrate a full enterprise property to the Adobe Experience Manager CMS. Developed in AEM, the components utilize a a mix of HTL/Sightly for markup and extensive JavaScript.",
+        "stack": "Adobe Experience Manager (AEM 6.3), HTML, SASS, JavaScript, VueJS, jQuery"
     },
     {
         "key": 3,

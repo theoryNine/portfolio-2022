@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import Screenshot from "./Screenshot";
+import Button from "../Button";
 
 const ExpandContainer = styled.div`
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     padding: 0;
-    transition: .5s linear max-height;
+    transition: .5s ease max-height;
         
     &.expanded {
-        height: auto;
+        max-height: 1300px;
         opacity: 1;
     }
 `
@@ -30,15 +31,41 @@ const ImageContainer = styled.div`
     }
 `
 
-const TileContent = ({expanded, liveUrl, screenshot1, screenshot2}) => {
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
+const RoleWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+
+    p {
+        letter-spacing: 2px;
+    }
+`
+
+const ContentWrapper = styled.div`
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+`
+
+const TileContent = ({expanded, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
     return (
         <ExpandContainer className={expanded ? 'expanded' : null}>
             <ContentContainer>
                 <ImageContainer>
                     <Screenshot image={screenshot1} />
                     {screenshot2 && <Screenshot image={screenshot2} />}
+                    {screenshot3 && <Screenshot image={screenshot3} />}
                 </ImageContainer>
-                Live Site: {liveUrl}
+                <ButtonWrapper>
+                    <Button url={liveUrl} newWindow={true} label="Access Live Site" />
+                </ButtonWrapper>
+                <RoleWrapper>{role && <p><b>Role:</b> {role}</p>}</RoleWrapper>
+                <ContentWrapper>{description && <p><b>Project Description:</b> {description}</p>}</ContentWrapper>
+                <ContentWrapper>{stack && <p><b>Tech Stack:</b> {stack}</p>}</ContentWrapper>
             </ContentContainer>
         </ExpandContainer>
     )

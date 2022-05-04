@@ -93,10 +93,9 @@ const TileHeader = styled.button`
     }
     `
 
-const ProjectTile = ({title, background, liveUrl, screenshot1, screenshot2}) => {
+const ProjectTile = ({title, background, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
     const [expanded, setExpand] = useState(false);
-    console.log(screenshot2);
-    
+
     return (
         <TileContainer className={expanded ? 'expanded' : null}>
             <BackgroundContainer src={background} className={expanded ? 'expanded' : null} />
@@ -104,7 +103,15 @@ const ProjectTile = ({title, background, liveUrl, screenshot1, screenshot2}) => 
                 <h2>{title}</h2>
                 <PlusIcon />
             </TileHeader>
-            <TileContent screenshot1={screenshot1} screenshot2={screenshot2} expanded={expanded} liveUrl={liveUrl} />
+            <TileContent 
+                role={role} 
+                screenshot1={screenshot1} 
+                screenshot2={screenshot2} 
+                screenshot3={screenshot3} 
+                expanded={expanded} 
+                description={description}
+                stack={stack}
+                liveUrl={liveUrl} />
         </TileContainer>
     )
 }

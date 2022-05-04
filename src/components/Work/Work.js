@@ -16,7 +16,11 @@ const Work = () => {
                         background={data.background}
                         screenshot1={data.screenshot1}
                         screenshot2={data.screenshot2}
+                        screenshot3={data.screenshot3}
                         liveUrl={data.liveUrl}
+                        role={data.role}
+                        description={data.description}
+                        stack={data.stack}
                         key={key} />
                 );
             })}

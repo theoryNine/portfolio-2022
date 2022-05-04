@@ -69,7 +69,8 @@ const FormContainer = styled.div`
       font-size: 1rem;
 
       &:active,
-      &:focus {
+      &:focus,
+      &:hover {
         box-shadow: 0 0 10px var(--fireTeal);
         outline: none;
       }

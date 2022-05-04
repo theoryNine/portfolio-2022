@@ -5,9 +5,9 @@ const ScreenshotContainer = styled.div`
     max-height: 200px;
     width: 300px;
     max-width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     border: 1px solid var(--fireTeal);
-    transition: .5s cubic-bezier(0, 1, 0, 1) max-height, .5s cubic-bezier(0, 1, 0, 1) width, .3s ease box-shadow;
+    transition: .3s ease max-height, .3s ease width, .3s ease box-shadow;
     cursor: pointer;
     margin: .5rem;
     flex-shrink: 30px;
@@ -19,7 +19,7 @@ const ScreenshotContainer = styled.div`
     &.expanded {
         border-color: var(--neonPink);
         width: 100%;
-        max-height: 4000px;
+        max-height: 900px;
         box-shadow: 0 0 10px var(--neonPink);
     }
 
