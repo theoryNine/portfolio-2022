@@ -22,11 +22,16 @@ const HeroBackground = styled.img`
     height:auto;
     display:block;
     z-index:2;
-    top: 30%;
+    bottom: -90%;
     animation-name: ${fadeInUp};
     animation-duration: 4s;
     transition: 2s ease transform;
     background: var(--black);
+
+    @media (min-width: 3000px) {
+      top: auto;
+      bottom: -50%;
+    }
 `
 
 const Background = () => {

@@ -21,6 +21,10 @@ const HeroContainer = styled.div`
   opacity: 0;
   z-index: 2;
 
+  @media (min-width: 3000px) {
+    height: 900px;
+  }
+
   &:hover {
     img {
       transform: translateY(-8px);
