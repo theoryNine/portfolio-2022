@@ -71,6 +71,7 @@ const FormContainer = styled.div`
       transition: .5s ease box-shadow;
       font-family: var(--primaryFont);
       font-size: 1rem;
+      border-radius: 0;
 
       &:active,
       &:focus,

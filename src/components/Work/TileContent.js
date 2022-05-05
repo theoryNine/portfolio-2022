@@ -16,9 +16,13 @@ const ExpandContainer = styled.div`
 `
 
 const ContentContainer = styled.div`
-    background: var(--black75);
-    margin: 25px 10px;
+    background: var(--black85);
+    margin: 10px 10px;
     padding: 1rem;
+
+    @media (max-width: 767px) {
+        padding: .5rem;
+    }
 `
 
 const ImageContainer = styled.div`

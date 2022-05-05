@@ -12,6 +12,11 @@ const ScreenshotContainer = styled.div`
     margin: .5rem;
     flex-shrink: 30px;
 
+    @media (max-width: 767px) {
+        width: 100%;
+        margin: .5rem 0;
+    }
+
     &:hover {
         box-shadow: 0 0 10px var(--fireTeal);
     }
