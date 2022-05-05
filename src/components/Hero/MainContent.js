@@ -6,7 +6,7 @@ import DownloadButton from "./DownloadButton";
 
 const Headline = styled.h1`
   color: var(--pureWhite);
-  font-size: 3.7rem;
+  font-size: 70px;
   font-family: 'Pacifico';
   font-weight: 700;
   text-shadow: 0 0 5px var(--pureWhite);
@@ -15,14 +15,14 @@ const Headline = styled.h1`
   z-index: 2;
   text-align: center;
 
-  @media (max-width: 370px) {
-    font-size: 2.9rem;
+  @media (max-width: 420px) {
+    font-size: 50px;
   }
 `
 
 const SubHeadline = styled.h2`
   color: var(--pureWhite);
-  font-size: 1.4rem;
+  font-size: 25px;
   font-family: 'Mulish';
   font-weight: 400;
   letter-spacing: .2rem;
@@ -30,17 +30,13 @@ const SubHeadline = styled.h2`
   margin: 0;
   margin-bottom: 1rem;
   line-height: 1;
-  transition: .5s ease letter-spacing;
   text-transform: uppercase;
   z-index: 2;
   text-align: center;
 
-  &:hover {
-    letter-spacing: .3rem;
-  }
-
-  @media (max-width: 370px) {
-    font-size: 1rem;
+  @media (max-width: 420px) {
+    font-size: 20px;
+    letter-spacing: .1rem;
   }
 `
 
@@ -56,8 +52,8 @@ const SmallHeadline = styled.h3`
   z-index: 2;
   text-align: center;
 
-  @media (max-width: 370px) {
-    font-size: 1rem;
+  @media (max-width: 420px) {
+    font-size: 15px;
   }
 `
 
