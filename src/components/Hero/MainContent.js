@@ -16,7 +16,7 @@ const Headline = styled.h1`
   text-align: center;
 
   @media (max-width: 370px) {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 `
 
