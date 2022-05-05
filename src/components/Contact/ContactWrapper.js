@@ -57,7 +57,7 @@ const TextContent = styled.div`
     }
 
     @media (max-width: 767px) {
-        padding: 1 0.4em;
+        padding: 1em 0.4em;
     }
 `
     

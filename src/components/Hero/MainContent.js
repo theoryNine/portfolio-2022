@@ -11,7 +11,7 @@ const Headline = styled.h1`
   font-weight: 700;
   text-shadow: 0 0 5px var(--pureWhite);
   line-height: 1;
-  margin: 0 0 1rem;
+  margin: 0 0 .5rem;
   z-index: 2;
   text-align: center;
 
@@ -28,7 +28,7 @@ const SubHeadline = styled.h2`
   letter-spacing: .2rem;
   text-shadow: 0 0 2px var(--pureWhite);
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   line-height: 1;
   text-transform: uppercase;
   z-index: 2;
