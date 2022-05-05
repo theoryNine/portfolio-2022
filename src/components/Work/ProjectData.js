@@ -30,7 +30,7 @@ export const ProjectData = [
         "screenshot3": `${BNYMobile}`,
         "role": "Senior Front-End Developer",
         "liveUrl": "https://www.bnymellon.com/",
-        "description": "Worked alongside a team of front-end and back-end developers, a design agency, and key stakeholders across the organization to migrate a full enterprise property to the Adobe Experience Manager CMS. Developed in AEM, the components utilize a a mix of HTL/Sightly for markup and extensive JavaScript.",
+        "description": "Worked alongside a team of front-end and back-end developers, a design agency, and key stakeholders across the organization to migrate a full enterprise property to the Adobe Experience Manager CMS. Developed in AEM, the components utilize a mix of HTL/Sightly for markup and extensive JavaScript.",
         "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, VueJS, jQuery"
     },
     {
