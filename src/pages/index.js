@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
@@ -8,14 +9,21 @@ import Contact from "../components/Contact/Contact";
 import Copyright from "../components/Copyright";
 
 const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <About />
-    <Skills />
-    <Work />
-    <Contact />
-    <Copyright />
-  </Layout>
+  <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Ansel Colvin | Front-End Developer</title>
+      <description>Front-End Developer, React Developer, and Certified Adobe Experience Manager developer. Making the web a better place.</description>
+    </Helmet>
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
+      <Copyright />
+    </Layout>
+  </>
 )
 
 export default IndexPage;
