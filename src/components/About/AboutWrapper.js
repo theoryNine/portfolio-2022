@@ -10,7 +10,7 @@ const BorderedContainer = styled.div`
     position: relative;
     transition: 2s ease-in-out transform, 2s ease-in-out opacity;
     transition-delay: .5s;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     opacity: 0;
 
     &.animate {
@@ -23,7 +23,7 @@ const BorderedContainer = styled.div`
     }
 
     @media (max-width: 767px) {
-        margin: .4em;
+        margin: 1em .4em;
     }
 `
 

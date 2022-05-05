@@ -21,7 +21,7 @@ const BorderedContainer = styled.div`
     }
 
     @media (max-width: 767px) {
-        margin: .4em;
+        margin: 1em .4em;
     }
 `
 
