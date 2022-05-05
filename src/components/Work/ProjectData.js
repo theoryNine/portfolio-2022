@@ -6,6 +6,7 @@ import SpectrumDesktopSS from "../../images/sitegrabs/spectrum_mobile_full.jpg";
 import NYLDesktopSS from "../../images/sitegrabs/nyl_full.jpg";
 import ATTDesktopSS from "../../images/sitegrabs/att_full.jpg";
 import CanonDesktopSS from "../../images/sitegrabs/canon_full.jpg";
+import CanonMobileSS from "../../images/sitegrabs/canon_mob.png";
 import ACUDesktopSS from "../../images/sitegrabs/acu_full.jpg";
 import FreshDesktopSS from "../../images/sitegrabs/fresh_full.jpg";
 
@@ -17,7 +18,8 @@ export const ProjectData = [
         "background": `${MazdaDesktopSS}`,
         "screenshot1": `${MazdaDesktopSS}`,
         "role": "Front-End Lead",
-        "stack": "Tech Stack"
+        "description": "Led a team of four front-end developers in working alongside a design agency and internal stakeholders to develop a new internal learning portal and sales system, built with React in Adobe Experience Manager, and leveraging multiple APIs as data sources.",
+        "stack": "Adobe Experience Manager (AEM), React, CSS/SASS, JavaScript"
     },
     {
         "key": 2,
@@ -29,7 +31,7 @@ export const ProjectData = [
         "role": "Senior Front-End Developer",
         "liveUrl": "https://www.bnymellon.com/",
         "description": "Worked alongside a team of front-end and back-end developers, a design agency, and key stakeholders across the organization to migrate a full enterprise property to the Adobe Experience Manager CMS. Developed in AEM, the components utilize a a mix of HTL/Sightly for markup and extensive JavaScript.",
-        "stack": "Adobe Experience Manager (AEM 6.3), HTML, SASS, JavaScript, VueJS, jQuery"
+        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, VueJS, jQuery"
     },
     {
         "key": 3,
@@ -37,7 +39,9 @@ export const ProjectData = [
         "background": `${SpectrumDesktopSS}`,
         "screenshot1": `${SpectrumDesktopSS}`,
         "liveUrl": "https://www.spectrum.com/",
-        "stack": "Tech Stack"
+        "role": "Front-End Developer",
+        "description": "Developed and maintained components and templates within Adobe Experience Manager CMS for several web properties.",
+        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
         "key": 4,
@@ -45,38 +49,46 @@ export const ProjectData = [
         "background": `${NYLDesktopSS}`,
         "screenshot1": `${NYLDesktopSS}`,
         "liveUrl": "https://www.newyorklife.com/",
-        "stack": "Tech Stack"
+        "role": "Front-End Developer",
+        "description": "Developed component and templates within Adobe Experience Manager.",
+        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
         "key": 5,
         "title": "AT&T",
         "background": `${ATTDesktopSS}`,
         "screenshot1": `${ATTDesktopSS}`,
-        "liveUrl": "https://www.newyorklife.com/",
-        "stack": "Tech Stack"
+        "liveUrl": "https://www.att.com/",
+        "description": "Developed components and implemented content within Adobe Experience Manager.",
+        "role": "Content Implemenetation Specialist",
+        "stack": "Adobe Experience Manager (AEM)"
     },
     {
         "key": 6,
         "title": "Canon USA",
         "background": `${CanonDesktopSS}`,
         "screenshot1": `${CanonDesktopSS}`,
-        "liveUrl": "https://www.newyorklife.com/",
-        "stack": "Tech Stack"
+        "screenshot2": `${CanonMobileSS}`,
+        "role": "Front-End Developer",
+        "liveUrl": "https://www.canonusa.com/",
+        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
         "key": 7,
         "title": "Abilene Christian University",
         "background": `${ACUDesktopSS}`,
         "screenshot1": `${ACUDesktopSS}`,
+        "role": "Front-End Developer",
         "liveUrl": "https://www.acu.edu/",
-        "stack": "Tech Stack"
+        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
         "key": 8,
         "title": "Fresh Image Center",
         "background": `${FreshDesktopSS}`,
         "screenshot1": `${FreshDesktopSS}`,
+        "role": "Front-End Developer",
         "liveUrl": "https://freshimagecenter.com/",
-        "stack": "Tech Stack"
+        "stack": "Wordpress, PHP, HTML, CSS/SASS"
     },
 ]

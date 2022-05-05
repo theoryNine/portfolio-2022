@@ -61,7 +61,7 @@ const TileContent = ({expanded, liveUrl, screenshot1, screenshot2, screenshot3, 
                     {screenshot3 && <Screenshot image={screenshot3} />}
                 </ImageContainer>
                 <ButtonWrapper>
-                    <Button url={liveUrl} newWindow={true} label="Access Live Site" />
+                    {liveUrl && <Button url={liveUrl} newWindow={true} label="Access Live Site" />}
                 </ButtonWrapper>
                 <RoleWrapper>{role && <p><b>Role:</b> {role}</p>}</RoleWrapper>
                 <ContentWrapper>{description && <p><b>Project Description:</b> {description}</p>}</ContentWrapper>

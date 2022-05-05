@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Aquarius from "./Aquarius";
 import Portrait from "./Portrait";
@@ -8,6 +8,15 @@ const BorderedContainer = styled.div`
     justify-content: flex-end;
     margin: 2em 0;
     position: relative;
+    transition: 2s ease-in-out transform, 2s ease-in-out opacity;
+    transition-delay: .5s;
+    transform: translateY(-20px);
+    opacity: 0;
+
+    &.animate {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
     @media (max-width: 1024px) {
         margin: 2em;
@@ -77,8 +86,15 @@ const ImageContainer = styled.div`
     `
     
 const AboutWrapper = ({ children }) => {
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+      // setAnimate sets the animate state
+      setAnimate(true);
+    },[])
+
     return (
-        <BorderedContainer>
+        <BorderedContainer className={animate === true ? 'animate' : ''}>
             <ImageContainer>
                 <Portrait />
                 <Aquarius />
