@@ -12,6 +12,10 @@ const FormContainer = styled.div`
     width: 90%;
   }
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
   button[type="submit"] {
     border: 1px solid var(--fireTeal);
     background: var(--darkTeal);

@@ -14,7 +14,7 @@ const Heading = styled.h2`
     margin: 1rem 0 1.5rem 0;
 
     @media (max-width: 767px) {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 `
 

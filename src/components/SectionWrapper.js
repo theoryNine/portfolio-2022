@@ -21,7 +21,7 @@ const BorderedContainer = styled.div`
     }
 
     @media (max-width: 767px) {
-        margin: 1em;
+        margin: .4em;
     }
 `
 
@@ -55,7 +55,7 @@ const TextContent = styled.div`
     }
 
     @media (max-width: 767px) {
-        padding: 0 1em;
+        padding: 0 0.5em;
     }
 `
     

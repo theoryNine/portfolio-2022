@@ -13,9 +13,10 @@ const Headline = styled.h1`
   line-height: 1;
   margin: 0 0 1rem;
   z-index: 2;
+  text-align: center;
 
   @media (max-width: 370px) {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 `
 
@@ -32,13 +33,14 @@ const SubHeadline = styled.h2`
   transition: .5s ease letter-spacing;
   text-transform: uppercase;
   z-index: 2;
+  text-align: center;
 
   &:hover {
     letter-spacing: .3rem;
   }
 
   @media (max-width: 370px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `
 
@@ -52,6 +54,7 @@ const SmallHeadline = styled.h3`
   line-height: 1;
   text-transform: lowercase;
   z-index: 2;
+  text-align: center;
 
   @media (max-width: 370px) {
     font-size: 1rem;

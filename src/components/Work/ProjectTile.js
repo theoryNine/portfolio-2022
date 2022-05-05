@@ -64,6 +64,10 @@ const BackgroundContainer = styled.img`
     &:hover {
         top: 10px;
     }
+
+    @media (max-width: 767px) {
+        opacity: .4;
+    }
     
     &.expanded {
         transform: rotate(0deg);
@@ -87,6 +91,8 @@ const TileHeader = styled.button`
     text-shadow: 0 0 5px var(--pureWhite);
     font-size: 1.2rem;
     cursor: pointer;
+    width: 88%;
+    text-align: left;
     
     @media (max-width: 767px) {
         font-size: .8rem;
