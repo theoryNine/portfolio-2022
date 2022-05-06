@@ -10,7 +10,7 @@ import Copyright from "../components/Copyright";
 
 const IndexPage = () => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{lang : 'en'}}>
       <meta charSet="utf-8" />
       <title>Ansel Colvin | Front-End Developer</title>
       <description>Front-End Developer, React Developer, and Certified Adobe Experience Manager developer. Making the web a better place.</description>
