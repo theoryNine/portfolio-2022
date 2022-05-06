@@ -91,8 +91,11 @@ const TileHeader = styled.button`
     text-shadow: 0 0 5px var(--pureWhite);
     font-size: 1.2rem;
     cursor: pointer;
-    width: 88%;
     text-align: left;
+
+    h3 {
+        width: 88%;
+    }
     
     @media (max-width: 767px) {
         font-size: .8rem;
