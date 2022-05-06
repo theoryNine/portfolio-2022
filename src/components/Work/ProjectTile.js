@@ -89,16 +89,16 @@ const TileHeader = styled.button`
     z-index: 2;
     color: var(--pureWhite);
     text-shadow: 0 0 5px var(--pureWhite);
-    font-size: 1.2rem;
     cursor: pointer;
     text-align: left;
 
     h3 {
         width: 88%;
-    }
-    
-    @media (max-width: 767px) {
-        font-size: .8rem;
+        font-size: 1.2rem;
+
+        @media (max-width: 767px) {
+            font-size: .8rem;
+        }
     }
     `
 
