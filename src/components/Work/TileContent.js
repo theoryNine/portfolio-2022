@@ -32,6 +32,7 @@ const ImageContainer = styled.div`
 
     @media (max-width: 767px) {
         flex-direction: column;
+        align-items: center;
     }
 `
 
