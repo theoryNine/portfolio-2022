@@ -18,7 +18,7 @@ export const ProjectData = [
         "background": `${MazdaDesktopSS}`,
         "screenshot1": `${MazdaDesktopSS}`,
         "role": "Front-End Lead",
-        "description": "Led a team of four front-end developers in working alongside a design agency and internal stakeholders to develop a new internal learning portal and sales system, built with React in Adobe Experience Manager, and leveraging multiple APIs as data sources.",
+        "description": "Led a team of front-end developers in working alongside a design agency and internal stakeholders to develop a new internal learning portal and sales system, built with React in Adobe Experience Manager, and leveraging multiple APIs as data sources.",
         "stack": "Adobe Experience Manager (AEM), React, CSS/SASS, JavaScript"
     },
     {
@@ -41,7 +41,7 @@ export const ProjectData = [
         "screenshot1": `${SpectrumDesktopSS}`,
         "liveUrl": "https://www.spectrum.com/",
         "role": "Front-End Developer",
-        "description": "Developed and maintained components and templates within Adobe Experience Manager CMS for several web properties.",
+        "description": "Developed and maintained components and templates within Adobe Experience Manager for several web properties.",
         "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
@@ -51,7 +51,7 @@ export const ProjectData = [
         "screenshot1": `${NYLDesktopSS}`,
         "liveUrl": "https://www.newyorklife.com/",
         "role": "Front-End Developer",
-        "description": "Developed component and templates within Adobe Experience Manager.",
+        "description": "Developed components and templates within Adobe Experience Manager.",
         "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
     },
     {
@@ -72,7 +72,7 @@ export const ProjectData = [
         "screenshot2": `${CanonMobileSS}`,
         "role": "Front-End Developer",
         "liveUrl": "https://www.canonusa.com/",
-        "stack": "Adobe Experience Manager (AEM), HTML/HTL/Sightly, CSS/SASS, JavaScript, jQuery"
+        "stack": "HTML, CSS/SASS, JavaScript, jQuery"
     },
     {
         "key": 7,
