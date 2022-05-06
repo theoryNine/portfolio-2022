@@ -94,10 +94,10 @@ const TileHeader = styled.button`
 
     h3 {
         width: 88%;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
         @media (max-width: 767px) {
-            font-size: .8rem;
+            font-size: 1.1rem;
         }
     }
     `
