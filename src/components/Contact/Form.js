@@ -128,15 +128,15 @@ const Form = () => {
     <>
     <FormContainer>
       <form onSubmit={handleOnSubmit}>
-        <label htmlFor="name">Name</label>
+        <label for="name" htmlFor="name">Name</label>
         <input type="text" name="name" />
-        <label htmlFor="email">E-Mail Address (Required)</label>
+        <label for="email" htmlFor="email">E-Mail Address (Required)</label>
         <input type="email" name="email" required />
-        <label htmlFor="message">Message (Required)</label>
+        <label for="message" htmlFor="message">Message (Required)</label>
         <textarea name="message" required />
         <div>
-          <button type="submit">Send</button>
-          <button type="reset">Clear</button>
+          <button label="submit" type="submit">Send</button>
+          <button label="clear" type="reset">Clear</button>
         </div>
       </form>
     </FormContainer>

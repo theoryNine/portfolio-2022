@@ -36,7 +36,7 @@ const HeroBackground = styled.img`
 
 const Background = () => {
     return (
-        <HeroBackground src={heroBg} />
+        <HeroBackground alt="" src={heroBg} />
     )
 }
 

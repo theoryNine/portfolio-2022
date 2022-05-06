@@ -104,7 +104,7 @@ const ProjectTile = ({id, title, background, liveUrl, screenshot1, screenshot2, 
 
     return (
         <TileContainer className={expanded ? 'expanded' : null}>
-            <BackgroundContainer src={background} className={expanded ? 'expanded' : null} />
+            <BackgroundContainer alt="" src={background} className={expanded ? 'expanded' : null} />
             <TileHeader type="button" onClick={() => setExpand(!expanded)} aria-controls={'tile' + id} aria-expanded={expanded ? 'true' : 'false'}>
                 <h3 id={'control' + id}>{title}</h3>
                 <PlusIcon />

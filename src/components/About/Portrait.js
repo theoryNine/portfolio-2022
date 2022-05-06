@@ -29,7 +29,7 @@ const Image = styled.img`
 
 const Portrait = () => {
     return (
-        <Image src={Picture} />
+        <Image alt="" src={Picture} />
     )
 }
 
