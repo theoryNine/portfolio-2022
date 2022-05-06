@@ -15,6 +15,7 @@ const Heading = styled.h2`
 
     @media (max-width: 767px) {
         font-size: 1.5em;
+        text-align: center;
     }
 `
 
