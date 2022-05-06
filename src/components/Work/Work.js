@@ -14,8 +14,11 @@ const Work = () => {
                         title={data.title}
                         background={data.background}
                         screenshot1={data.screenshot1}
+                        screenshot1mob={data.screenshot1mob}
                         screenshot2={data.screenshot2}
+                        screenshot2mob={data.screenshot2mob}
                         screenshot3={data.screenshot3}
+                        screenshot3mob={data.screenshot3mob}
                         liveUrl={data.liveUrl}
                         role={data.role}
                         description={data.description}

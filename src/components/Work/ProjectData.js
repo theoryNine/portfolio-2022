@@ -28,6 +28,7 @@ export const ProjectData = [
         "screenshot1": `${BNYDesktopSS}`,
         "screenshot2": `${BNYDesktopSS2}`,
         "screenshot3": `${BNYMobile}`,
+        "screenshot3mob": true,
         "role": "Senior Front-End Developer",
         "liveUrl": "https://www.bnymellon.com/",
         "description": "Worked alongside a team of front-end and back-end developers, a design agency, and key stakeholders across the organization to migrate a full enterprise property to the Adobe Experience Manager CMS. Developed in AEM, the components utilize a mix of HTL/Sightly for markup and extensive JavaScript.",

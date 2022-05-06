@@ -99,7 +99,7 @@ const TileHeader = styled.button`
     }
     `
 
-const ProjectTile = ({id, title, background, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
+const ProjectTile = ({id, title, background, liveUrl, screenshot1, screenshot1mob, screenshot2, screenshot2mob, screenshot3, screenshot3mob, role, description, stack}) => {
     const [expanded, setExpand] = useState(false);
 
     return (
@@ -111,9 +111,12 @@ const ProjectTile = ({id, title, background, liveUrl, screenshot1, screenshot2, 
             </TileHeader>
             <TileContent 
                 role={role} 
-                screenshot1={screenshot1} 
+                screenshot1={screenshot1}
+                screenshot1mob={screenshot1mob}  
                 screenshot2={screenshot2} 
+                screenshot2mob={screenshot2mob} 
                 screenshot3={screenshot3} 
+                screenshot3mob={screenshot3mob} 
                 expanded={expanded} 
                 description={description}
                 stack={stack}

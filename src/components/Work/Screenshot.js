@@ -12,6 +12,10 @@ const ScreenshotContainer = styled.div`
     margin: .5rem;
     flex-shrink: 30px;
 
+    &.mobile {
+        width: 180px;
+    }
+
     @media (max-width: 767px) {
         width: 100%;
         margin: .5rem 0;
@@ -35,11 +39,11 @@ const ScreenshotContainer = styled.div`
     }
 `
 
-const Screenshot = ({image}) => {
+const Screenshot = ({image, mobile}) => {
     const [expanded, setExpand] = useState(false);
 
     return (
-        <ScreenshotContainer className={expanded ? 'expanded' : null} onClick={() => setExpand(!expanded)}>
+        <ScreenshotContainer className={`${expanded ? 'expanded' : null} ${mobile ? 'mobile' : null}`} onClick={() => setExpand(!expanded)}>
             <img src={image} alt="" />
         </ScreenshotContainer>
     )

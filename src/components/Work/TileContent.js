@@ -55,15 +55,15 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
 `
 
-const TileContent = ({id, expanded, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
+const TileContent = ({id, expanded, liveUrl, screenshot1, screenshot1mob, screenshot2, screenshot2mob, screenshot3, screenshot3mob, role, description, stack}) => {
     return (
         <ExpandContainer className={expanded ? 'expanded' : null}>
             <div id={'tile' + id} aria-labelledby={'control' + id}>
                 <ContentContainer>
                     <ImageContainer>
-                        <Screenshot image={screenshot1} />
-                        {screenshot2 && <Screenshot image={screenshot2} />}
-                        {screenshot3 && <Screenshot image={screenshot3} />}
+                        <Screenshot mobile={screenshot1mob} image={screenshot1} />
+                        {screenshot2 && <Screenshot mobile={screenshot2mob} image={screenshot2} />}
+                        {screenshot3 && <Screenshot mobile={screenshot3mob} image={screenshot3} />}
                     </ImageContainer>
                     <ButtonWrapper>
                         {liveUrl && <Button url={liveUrl} newWindow={true} label="Access Live Site" />}
