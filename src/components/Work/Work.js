@@ -5,7 +5,6 @@ import ProjectTile from "./ProjectTile";
 import { ProjectData } from "./ProjectData";
 
 const Work = () => {
-    console.log(ProjectData);
     return (
         <SectionWrapper>
             <SectionHeading align="center" content="Some Of My Work"></SectionHeading>
@@ -21,6 +20,7 @@ const Work = () => {
                         role={data.role}
                         description={data.description}
                         stack={data.stack}
+                        id={data.key}
                         key={key} />
                 );
             })}

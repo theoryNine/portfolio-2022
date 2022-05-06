@@ -55,22 +55,24 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
 `
 
-const TileContent = ({expanded, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
+const TileContent = ({id, expanded, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
     return (
         <ExpandContainer className={expanded ? 'expanded' : null}>
-            <ContentContainer>
-                <ImageContainer>
-                    <Screenshot image={screenshot1} />
-                    {screenshot2 && <Screenshot image={screenshot2} />}
-                    {screenshot3 && <Screenshot image={screenshot3} />}
-                </ImageContainer>
-                <ButtonWrapper>
-                    {liveUrl && <Button url={liveUrl} newWindow={true} label="Access Live Site" />}
-                </ButtonWrapper>
-                <RoleWrapper>{role && <p><b>Role:</b> {role}</p>}</RoleWrapper>
-                <ContentWrapper>{description && <p><b>Project Description:</b> {description}</p>}</ContentWrapper>
-                <ContentWrapper>{stack && <p><b>Tech Stack:</b> {stack}</p>}</ContentWrapper>
-            </ContentContainer>
+            <div id={'tile' + id} aria-labelledby={'control' + id}>
+                <ContentContainer>
+                    <ImageContainer>
+                        <Screenshot image={screenshot1} />
+                        {screenshot2 && <Screenshot image={screenshot2} />}
+                        {screenshot3 && <Screenshot image={screenshot3} />}
+                    </ImageContainer>
+                    <ButtonWrapper>
+                        {liveUrl && <Button url={liveUrl} newWindow={true} label="Access Live Site" />}
+                    </ButtonWrapper>
+                    <RoleWrapper>{role && <p><b>Role:</b> {role}</p>}</RoleWrapper>
+                    <ContentWrapper>{description && <p><b>Project Description:</b> {description}</p>}</ContentWrapper>
+                    <ContentWrapper>{stack && <p><b>Tech Stack:</b> {stack}</p>}</ContentWrapper>
+                </ContentContainer>
+            </div>
         </ExpandContainer>
     )
 }

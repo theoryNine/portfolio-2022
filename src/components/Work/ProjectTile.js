@@ -99,14 +99,14 @@ const TileHeader = styled.button`
     }
     `
 
-const ProjectTile = ({title, background, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
+const ProjectTile = ({id, title, background, liveUrl, screenshot1, screenshot2, screenshot3, role, description, stack}) => {
     const [expanded, setExpand] = useState(false);
 
     return (
         <TileContainer className={expanded ? 'expanded' : null}>
             <BackgroundContainer src={background} className={expanded ? 'expanded' : null} />
-            <TileHeader type="button" onClick={() => setExpand(!expanded)}>
-                <h2>{title}</h2>
+            <TileHeader type="button" onClick={() => setExpand(!expanded)} aria-controls={'tile' + id} aria-expanded={expanded ? 'true' : 'false'}>
+                <h3 id={'control' + id}>{title}</h3>
                 <PlusIcon />
             </TileHeader>
             <TileContent 
@@ -117,7 +117,8 @@ const ProjectTile = ({title, background, liveUrl, screenshot1, screenshot2, scre
                 expanded={expanded} 
                 description={description}
                 stack={stack}
-                liveUrl={liveUrl} />
+                liveUrl={liveUrl}
+                id={id} />
         </TileContainer>
     )
 }
