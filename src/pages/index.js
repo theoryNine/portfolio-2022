@@ -6,11 +6,11 @@ import Skills from "../components/Skills/Skills";
 import Work from "../components/Work/Work";
 import Contact from "../components/Contact/Contact";
 import Copyright from "../components/Copyright";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <>
-    <Seo />
+    <SEO title="Title" />
     <Layout>
       <Hero />
       <About />
