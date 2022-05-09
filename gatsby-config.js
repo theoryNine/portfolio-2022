@@ -31,7 +31,6 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-  ],
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -42,8 +41,14 @@ module.exports = {
         display: 'swap'
       }
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+        options: {
+          trackingIds: ['G-SF5E8BFYYR'],
+          pluginConfig: {
+            head: true
+          }
+        }
+    }
   ],
 }
