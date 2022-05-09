@@ -10,7 +10,8 @@ module.exports = {
         options: {
           trackingIds: ['G-SF5E8BFYYR'],
           pluginConfig: {
-            head: true
+            head: true,
+            anonymize: true
           }
         }
     },
