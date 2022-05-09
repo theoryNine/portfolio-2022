@@ -9,6 +9,7 @@ import CanonDesktopSS from "../../images/sitegrabs/canon_full.jpg";
 import CanonMobileSS from "../../images/sitegrabs/canon_mob.png";
 import ACUDesktopSS from "../../images/sitegrabs/acu_full.jpg";
 import FreshDesktopSS from "../../images/sitegrabs/fresh_full.jpg";
+import MazdaMobileSS from "../../images/sitegrabs/Mazda_Mob.png";
 
 
 export const ProjectData = [
@@ -17,6 +18,8 @@ export const ProjectData = [
         "title": "Mazda Brand Academy",
         "background": `${MazdaDesktopSS}`,
         "screenshot1": `${MazdaDesktopSS}`,
+        "screenshot2": `${MazdaMobileSS}`,
+        "screenshot2mob": true,
         "role": "Front-End Lead",
         "description": "Led a team of front-end developers in working alongside a design agency and internal stakeholders to develop a new internal learning portal and sales system, built with React in Adobe Experience Manager, and leveraging multiple APIs as data sources.",
         "stack": "Adobe Experience Manager (AEM), React, CSS/SASS, JavaScript"
