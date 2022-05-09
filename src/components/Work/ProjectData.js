@@ -70,6 +70,7 @@ export const ProjectData = [
         "background": `${CanonDesktopSS}`,
         "screenshot1": `${CanonDesktopSS}`,
         "screenshot2": `${CanonMobileSS}`,
+        "screenshot3mob": true,
         "role": "Front-End Developer",
         "liveUrl": "https://www.canonusa.com/",
         "stack": "HTML, CSS/SASS, JavaScript, jQuery"
