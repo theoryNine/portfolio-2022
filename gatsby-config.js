@@ -5,6 +5,15 @@ module.exports = {
     author: `Ansel Colvin`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+        options: {
+          trackingIds: ['G-SF5E8BFYYR'],
+          pluginConfig: {
+            head: true
+          }
+        }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
@@ -41,14 +50,5 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-        options: {
-          trackingIds: ['G-SF5E8BFYYR'],
-          pluginConfig: {
-            head: true
-          }
-        }
-    }
   ],
 }
