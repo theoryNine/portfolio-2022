@@ -72,7 +72,7 @@ export const ProjectData = [
         "screenshot2": `${CanonMobileSS}`,
         "screenshot2mob": true,
         "role": "Front-End Developer",
-        "liveUrl": "https://www.canonusa.com/",
+        "liveUrl": "https://www.usa.canon.com/",
         "stack": "HTML, CSS/SASS, JavaScript, jQuery"
     },
     {
