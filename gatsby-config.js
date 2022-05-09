@@ -5,17 +5,6 @@ module.exports = {
     author: `Ansel Colvin`,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "G-SF5E8BFYYR",
-  
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: true,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
