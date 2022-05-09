@@ -7,10 +7,6 @@ import Skills from "../components/Skills/Skills";
 import Work from "../components/Work/Work";
 import Contact from "../components/Contact/Contact";
 import Copyright from "../components/Copyright";
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('G-SF5E8BFYYR');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const IndexPage = () => (
   <>
